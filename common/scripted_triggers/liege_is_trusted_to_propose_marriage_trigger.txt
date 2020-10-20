@@ -1,0 +1,29 @@
+liege_is_trusted_to_propose_marriage_trigger = {
+    scope:secondary_actor = {
+        if = {
+            limit = {
+                AND = {
+                    is_child_of = scope:actor
+                    is_vassal_of = scope:actor
+                }
+            }
+            save_temporary_scope_as = trusting_vassal
+        }
+        else_if = {
+            limit = {
+                AND = {
+                    is_grandchild_of = scope:actor
+                    target_is_liege_or_above = scope:actor
+                }
+            }
+            liege = { save_temporary_scope_as = trusting_vassal }
+        }
+    }
+    scope:trusting_vassal = {
+        NAND = {
+            is_rival_of = scope:actor
+            is_nemesis_of = scope:actor
+        }
+    }
+
+}

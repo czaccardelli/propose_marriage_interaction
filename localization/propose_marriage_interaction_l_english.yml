@@ -1,0 +1,5 @@
+﻿l_english:
+ propose_marriage_interaction:0 "Propose Spouse"
+ propose_marriage_interaction_desc:0 "Propose a spouse for [secondary_actor.GetShortUINameNoTooltip]"
+ actor_secondary_propose_marriage_interaction:0 "[spouse|E]"
+ propose_marriage_extra_icon:0 "$hook_extra_icon$"
