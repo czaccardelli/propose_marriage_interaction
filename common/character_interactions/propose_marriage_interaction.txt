@@ -1,4 +1,4 @@
-#copied from marry_off_interaction in 1.1.3
+﻿#copied from marry_off_interaction in 1.1.3
 propose_marriage_interaction = {
 	category = interaction_category_diplomacy
 	common_interaction = yes

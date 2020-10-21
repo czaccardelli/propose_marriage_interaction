@@ -1,4 +1,4 @@
-liege_is_trusted_to_propose_marriage_trigger = {
+﻿liege_is_trusted_to_propose_marriage_trigger = {
     scope:secondary_actor = {
         if = {
             limit = {
